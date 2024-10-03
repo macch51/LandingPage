@@ -6,12 +6,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      lineHeight: {
+        '24': '6rem',
+      },
       colors: {
-        primary: '#3498db',
+        primary: '#2B2B2B',
         secondary: '#2ecc71',
         textColor: '#FFFFFF',
         backgroundColor: '#f5f5f5',
-        purple: '#BFAFF2',
+        lightpurple: '#BFAFF2',
+        yellow: '#F2D783',
+        darkcharcoal: '#333333'
       },
     },
   },

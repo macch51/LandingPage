@@ -7,7 +7,8 @@ import Sap from "../assets/sap.svg"
 export default function Partners() {
     return (
       <div className="bg-primary relative z-10 mt-0 sm:py-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <hr className="border-t-2 border-white opacity-20 my-8 mx-20" />  
+        <div className="mx-auto py-4 max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             <img
               alt="Accenture"
@@ -46,6 +47,7 @@ export default function Partners() {
             />
           </div>
         </div>
+        <hr className="border-t-2 border-white opacity-20 my-8 mx-20" />  
       </div>
     )
   }

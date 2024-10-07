@@ -1,11 +1,10 @@
 import Button from './button';
 import "../fonts/Lightbox.otf"
-import HeroImage from "../assets/hero.svg"
 import HeroGif from "../assets/hero.gif"
 function Hero() {
     return (
-        <div className='flex gap-8 bg-primary'>
-            <section className="w-1/2 relative bg-primary h-screen flex mt-28 justify-center text-left">
+        <div className='flex gap-8 bg-primary h-normal pb-6'>
+            <section className="w-1/2 relative bg-primary  flex mt-28 justify-center text-left ">
                 <div className="w-full px-4 sm:px-8">
                     {/* Heading */}
                     <h1 className="text-6xl pl-24 poppins-semibold leading-24 px-20 text-white w-full px-4">

@@ -19,7 +19,8 @@ module.exports = {
         backgroundColor: '#f5f5f5',
         lightpurple: '#BFAFF2',
         yellow: '#F2D783',
-        darkcharcoal: '#333333'
+        darkcharcoal: '#333333',
+        demobg: '#FDF5DF'
       },
     },
   },

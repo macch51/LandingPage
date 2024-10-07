@@ -549,24 +549,16 @@ video {
   position: relative;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.z-10 {
+  z-index: 10;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+.col-start-2 {
+  grid-column-start: 2;
 }
 
 .mx-24 {
@@ -574,65 +566,61 @@ video {
   margin-right: 6rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-16 {
   margin-top: 4rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-12 {
   height: 3rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-auto {
-  height: auto;
+.max-h-12 {
+  max-height: 3rem;
 }
 
 .w-1\/2 {
@@ -643,16 +631,24 @@ video {
   width: 11rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-auto {
   width: auto;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .items-center {
@@ -675,6 +671,14 @@ video {
   gap: 2rem;
 }
 
+.gap-x-8 {
+  column-gap: 2rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -694,8 +698,12 @@ video {
   background-color: rgb(242 215 131 / var(--tw-bg-opacity));
 }
 
-.bg-cover {
-  background-size: cover;
+.fill-white {
+  fill: #fff;
+}
+
+.object-contain {
+  object-fit: contain;
 }
 
 .p-2 {
@@ -716,19 +724,9 @@ video {
   padding-right: 1rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-8 {
@@ -736,56 +734,29 @@ video {
   padding-right: 2rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pl-24 {
   padding-left: 6rem;
-}
-
-.pl-28 {
-  padding-left: 7rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
 .pr-16 {
   padding-right: 4rem;
 }
 
-.text-left {
-  text-align: left;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
+.text-left {
+  text-align: left;
 }
 
 .font-poppins {
@@ -807,12 +778,12 @@ video {
   line-height: 1.75rem;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-24 {
@@ -850,15 +821,57 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .sm\:col-start-auto {
+    grid-column-start: auto;
+  }
+
+  .sm\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sm\:gap-x-10 {
+    column-gap: 2.5rem;
+  }
+
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:px-8 {

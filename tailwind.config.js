@@ -20,7 +20,8 @@ module.exports = {
         lightpurple: '#BFAFF2',
         yellow: '#F2D783',
         darkcharcoal: '#333333',
-        demobg: '#FDF5DF'
+        demobg: '#FDF5DF',
+        testimonialbg: "#BFAFF2"
       },
     },
   },

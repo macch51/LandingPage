@@ -4,6 +4,7 @@ import Partners from './components/partners';
 import Demo from './components/demo';
 import Features from './components/features';
 import Testimonial from './components/testimonial';
+import Contact from './components/contact';
 function App() {
   return (
     <div className='bg-primary'>
@@ -13,6 +14,7 @@ function App() {
       <Demo />
       <Features />
       <Testimonial />
+      <Contact />
     </div>
   );
 }

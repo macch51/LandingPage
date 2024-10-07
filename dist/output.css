@@ -969,6 +969,10 @@ video {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .leading-24 {
   line-height: 6rem;
 }
